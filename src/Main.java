@@ -13,7 +13,7 @@ public class Main {
 
         for(double i = x1; i < x2+1; i+=step)
         {
-            result += func.call(i) * ((i + step) - i);
+            result += func.call(i) * step;   // ((i + step) - i) = step
         }
         return result;
     }
